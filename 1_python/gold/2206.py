@@ -59,7 +59,7 @@ def bfs(r, c, cnt, destroy):
             if maze[mr][mc] == '0':
                 visited[mr][mc] = 1
                 q.append((mr, mc, cnt+1, destroy))
-            if destroy:
+            elif destroy:
                 visited[mr][mc] = 1
                 q.append((mr, mc, cnt+1, False))
 
